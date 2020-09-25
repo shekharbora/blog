@@ -1,0 +1,22 @@
+<h1>Articles#index</h1>
+<p>Find me in app/views/articles/index.html.erb</p>
+
+<table>
+	<tr>		
+	<thead>
+		Title
+	</thead>
+	<thead>
+		Body
+	</thead>
+	</tr>
+	<tbody>
+		<%@articles.each do |f|%>
+			<tr>
+				<td><%= f.title%></td>
+				<td><%= f.body%></td>
+			</tr>
+		<%end%>
+	</tbody>
+</table>
+
